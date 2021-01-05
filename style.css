@@ -17,7 +17,7 @@
   .col { padding: 1.6666666667px; } }
 @media screen and (min-width: 48em) { html { font-size: 18px; }
   .img_row { height: 183.3333333333px; }
-  .col { padding: 3.3333333333px; } }
+  .col { padding: 13.3333333333px; } }
 @media screen and (min-width: 64em) { html { font-size: 20px; }
   .img_row { height: 275px; }
   .col { padding: 5px; } }
@@ -636,4 +636,5 @@ div.gallery img {
     width: 100%;
   }
 }
+
 
