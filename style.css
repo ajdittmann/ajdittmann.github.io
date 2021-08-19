@@ -345,7 +345,7 @@ em img { max-width: 100%; margin-left: 0; }
 
 body { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
 
-.wrapper { max-width: -webkit-calc(800px - (50px * 2)); max-width: calc(800px - (50px * 2)); 
+.wrapper { max-width: -webkit-calc(1000px - (50px * 2)); max-width: calc(1000px - (50px * 2)); 
 margin-right: auto; margin-left: auto; padding-right: 50px; padding-left: 50px; }
 
 .clearfix:before, .wrapper:before, .clearfix:after, .wrapper:after { content: ' '; display: table; }
@@ -418,13 +418,13 @@ footer a:hover { color: #000080; }
 
 .post-link { display: block; font-size: 42px; }
 
-.project { box-sizing: border-box; float: left; height: 250px; padding: 10px; vertical-align: middle; 
+.project { box-sizing: border-box; float: left; height: 325px; padding: 10px; vertical-align: middle; 
 width: 33.33%; }
 
-.project .thumbnail {overflow:hidden; height: 200px; width: 100%; }
-.project .thumbnail img { height: 200px; position: relative; width: 200px; }
+.project .thumbnail {overflow:hidden; height: 250px; width: 100%; }
+.project .thumbnail img { height: 250px; position: relative; width: 250px; }
 
-.project .thumbnail a {height: 200px; position: relative; width: 100%;}
+.project .thumbnail a {height: 250px; position: relative; width: 100%;}
 .project .thumbnail a span {display: none; position: absolute; bottom: 0;
 background: rgba(0, 0, 0, 0.4); color: #e8e8e8; padding: 40px; text-align: center; }
 
