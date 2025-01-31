@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.6.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.6.2.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+
+
+<title>Aspen 2025</title>
+<meta name="description" content="description." />
+<link rel="stylesheet" href="../simple.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>The Orbital Evolution of Eccentric Binaries</h1>
+      The influence of thin circumbinary disks<br>
+<strong>Alexander J. Dittmann, Institute for Advanced Study</strong>
+<br>
+| <a href="#motivation">Motivation</a> |
+<a href="#results">Results</a> |
+<a href="#future">Future Work</a> |
+<a href="#technical">Technical Details</a> |
+<a href="#references">Bibliography</a> |
+    </header>
+
+    <main>
+
+<a id="motivation"> </a>
+      <p class="notice"><strong>Motivation:</strong><br />
+      Simulations of moderately thin (\(H/r=0.1, \mathcal{M}=10\)) circumbinary disks have found that binary eccentricities 
+      can be driven towards a stable attractor at \( e\sim0.45\) (for equal-mass binaries), which has the potential to appreciably affect
+      binary inspirals and the stochastic gravitational wave background. <br/><strong> But does this hold
+      for thinner disks?</strong> </p>
+
+      To answer this question, I ran a suite of 2D hydrodynamical simulations using DISCO for equal-mass binaries with eccentricities between 0.0125 and 0.6 (more details <a href="#technical">here </a>). The simulations looked something like this:
+<img src="../../img/m30nu1em3.gif" alt="A circumbinary disk">
+<br/>(actually a circular binary from
+<a class="page-link" href="#D&R22">Dittmann & Ryan 2022</a> )
+
+<p class="notice">
+<a id="results"> </a>
+<strong> Results: </strong> <br>
+For now I've just looked at two cases: \( H/r=0.1,\,\mathcal{M}=10\), and \( H/r=0.05,\,\mathcal{M}=20\). <br>
+The main takeaways so far are:
+<strong>
+<br/>• Near-circular binaries are circularized in both cases
+<br/>• Both cases support an equilibrium eccentricity between 0.4 and 0.5
+<br/>• Semi-major axis evolution is complicated
+</strong>
+</p>
+
+<br>
+<strong>
+Here is the rate of change of the binary eccentricity as a function of binary eccentricity. 
+</strong>
+
+<div id="e989c2d7-b15e-4a59-9474-7e7c861fe70e" data-root-id="p1069" style="display: contents;"></div>
+
+    <script type="application/json" id="d698ec9d-5e3b-4fa3-bf13-6db54c527656">
+      {"a8445879-df8d-435d-90be-e3b47acc12fb":{"version":"3.6.2","title":"Bokeh Application","roots":[{"type":"object","name":"Row","id":"p1069","attributes":{"children":[{"type":"object","name":"CheckboxGroup","id":"p1067","attributes":{"js_property_callbacks":{"type":"map","entries":[["change:active",[{"type":"object","name":"CustomJS","id":"p1068","attributes":{"args":{"type":"map","entries":[["l0",{"type":"object","name":"GlyphRenderer","id":"p1050","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1044","attributes":{"selected":{"type":"object","name":"Selection","id":"p1045","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1046"},"data":{"type":"map","entries":[["x",{"type":"ndarray","array":{"type":"bytes","data":"mpmZmZmZiT+amZmZmZmZP5qZmZmZmak/mpmZmZmZuT+amZmZmZnJPzMzMzMzM9M/mpmZmZmZ2T8AAAAAAADgPzMzMzMzM+M/"},"shape":[9],"dtype":"float64","order":"little"}],["y",{"type":"ndarray","array":{"type":"bytes","data":"pwWWqSjlz7/3Phqhk5Pdv1TqXDHGaeq/EB4HYUCnGUBwTN45glkmQAR4ySSmgCVApahb+uyRDkBvatkTwRkEwG1O8jb8XQbA"},"shape":[9],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1051","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1052"}}},"glyph":{"type":"object","name":"Scatter","id":"p1047","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":15},"line_color":{"type":"value","value":"#440154"},"line_alpha":{"type":"value","value":0.8},"fill_color":{"type":"value","value":"#440154"},"fill_alpha":{"type":"value","value":0.8},"hatch_color":{"type":"value","value":"#440154"},"hatch_alpha":{"type":"value","value":0.8},"marker":{"type":"value","value":"square"}}},"nonselection_glyph":{"type":"object","name":"Scatter","id":"p1048","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":15},"line_color":{"type":"value","value":"#440154"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#440154"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"#440154"},"hatch_alpha":{"type":"value","value":0.1},"marker":{"type":"value","value":"square"}}},"muted_glyph":{"type":"object","name":"Scatter","id":"p1049","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":15},"line_color":{"type":"value","value":"#440154"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#440154"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"#440154"},"hatch_alpha":{"type":"value","value":0.2},"marker":{"type":"value","value":"square"}}}}}],["l1",{"type":"object","name":"GlyphRenderer","id":"p1061","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1055","attributes":{"selected":{"type":"object","name":"Selection","id":"p1056","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1057"},"data":{"type":"map","entries":[["x",{"type":"ndarray","array":{"type":"bytes","data":"mpmZmZmZiT+amZmZmZmZP5qZmZmZmak/mpmZmZmZuT+amZmZmZnJPzMzMzMzM9M/mpmZmZmZ2T8AAAAAAADgPzMzMzMzM+M/"},"shape":[9],"dtype":"float64","order":"little"}],["y",{"type":"ndarray","array":{"type":"bytes","data":"/o3B4QBk67+93gyQgfzzP9xaEpTgntc/Bo7+bkqJ9D/H2i/pZyw8QIxIZD7nbShAKkmErrcuAkCIiRfmwmz1vzSkp6Lr2f2/"},"shape":[9],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1062","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1063"}}},"glyph":{"type":"object","name":"Scatter","id":"p1058","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":15},"line_color":{"type":"value","value":"#208F8C"},"line_alpha":{"type":"value","value":0.8},"fill_color":{"type":"value","value":"#208F8C"},"fill_alpha":{"type":"value","value":0.8},"hatch_color":{"type":"value","value":"#208F8C"},"hatch_alpha":{"type":"value","value":0.8}}},"nonselection_glyph":{"type":"object","name":"Scatter","id":"p1059","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":15},"line_color":{"type":"value","value":"#208F8C"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#208F8C"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"#208F8C"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"Scatter","id":"p1060","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":15},"line_color":{"type":"value","value":"#208F8C"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#208F8C"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"#208F8C"},"hatch_alpha":{"type":"value","value":0.2}}}}}],["checkbox",{"id":"p1067"}]]},"code":"\nconsole.log(checkbox.active)\n\nl0.visible = checkbox.active.includes(0);\nl1.visible = checkbox.active.includes(1);\n"}}]]]},"width":100,"labels":["h/r=0.1","h/r=0.05"],"active":[0,1]}},{"type":"object","name":"Figure","id":"p1001","attributes":{"height":400,"x_range":{"type":"object","name":"DataRange1d","id":"p1002"},"y_range":{"type":"object","name":"DataRange1d","id":"p1003"},"x_scale":{"type":"object","name":"LinearScale","id":"p1010"},"y_scale":{"type":"object","name":"LinearScale","id":"p1011"},"title":{"type":"object","name":"Title","id":"p1008"},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1041","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1035","attributes":{"selected":{"type":"object","name":"Selection","id":"p1036","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1037"},"data":{"type":"map","entries":[["x",{"type":"ndarray","array":{"type":"bytes","data":"mpmZmZmZiT+amZmZmZmZP5qZmZmZmak/mpmZmZmZuT+amZmZmZnJPzMzMzMzM9M/mpmZmZmZ2T8AAAAAAADgPzMzMzMzM+M/"},"shape":[9],"dtype":"float64","order":"little"}],["y",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"},"shape":[9],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1042","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1043"}}},"glyph":{"type":"object","name":"Line","id":"p1038","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"gray","line_dash":[6]}},"nonselection_glyph":{"type":"object","name":"Line","id":"p1039","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"gray","line_alpha":0.1,"line_dash":[6]}},"muted_glyph":{"type":"object","name":"Line","id":"p1040","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"gray","line_alpha":0.2,"line_dash":[6]}}}},{"id":"p1050"},{"id":"p1061"}],"toolbar":{"type":"object","name":"Toolbar","id":"p1009","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p1022"},{"type":"object","name":"WheelZoomTool","id":"p1023","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p1024","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p1025","attributes":{"syncable":false,"line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","handles":{"type":"object","name":"BoxInteractionHandles","id":"p1031","attributes":{"all":{"type":"object","name":"AreaVisuals","id":"p1030","attributes":{"fill_color":"white","hover_fill_color":"lightgray"}}}}}}}},{"type":"object","name":"SaveTool","id":"p1032"},{"type":"object","name":"ResetTool","id":"p1033"},{"type":"object","name":"HelpTool","id":"p1034"}]}},"left":[{"type":"object","name":"LinearAxis","id":"p1017","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1018","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1019"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p1020"}}},{"type":"object","name":"Title","id":"p1065","attributes":{"text":"de/dlogM","align":"center"}}],"below":[{"type":"object","name":"LinearAxis","id":"p1012","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1013","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1014"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p1015"}}},{"type":"object","name":"Title","id":"p1066","attributes":{"text":"e","align":"center"}}],"center":[{"type":"object","name":"Grid","id":"p1016","attributes":{"axis":{"id":"p1012"}}},{"type":"object","name":"Grid","id":"p1021","attributes":{"dimension":1,"axis":{"id":"p1017"}}},{"type":"object","name":"Legend","id":"p1053","attributes":{"items":[{"type":"object","name":"LegendItem","id":"p1054","attributes":{"label":{"type":"value","value":"h/r=0.1"},"renderers":[{"id":"p1050"}]}},{"type":"object","name":"LegendItem","id":"p1064","attributes":{"label":{"type":"value","value":"h/r=0.05"},"renderers":[{"id":"p1061"}]}}]}}]}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('d698ec9d-5e3b-4fa3-bf13-6db54c527656').textContent;
+              const render_items = [{"docid":"a8445879-df8d-435d-90be-e3b47acc12fb","roots":{"p1069":"e989c2d7-b15e-4a59-9474-7e7c861fe70e"},"root_ids":["p1069"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+
+<br />
+
+The purple, \(H/r=0.1\), points
+essentially reproduced the results of 
+<a class="page-link" href="#Zrake+21">Zrake+ 2021</a> and
+<a class="page-link" href="#D&D21">D'Orazio & Duffell 2021</a>, and above \( e\gtrsim0.1\) agree well with 
+<a class="page-link" href="#Siwek+23">Siwek+ 2023</a>.
+Notably, at low eccentricities <a class="page-link" href="#Siwek+23">Siwek+ 2023</a> found that near-circular binaries experienced eccentricity "pumping" (\(de/dt > 0 \)), whereas the current study, the other aforementioned papers, and a recent preprint at lower viscosities, <a class="page-link" href="#Penzlin+25">Penzlin+ 2025</a>, all find that low-eccentricity binaries are driven towards circularization.
+ <br>
+ <br>
+
+<strong>
+Here is the rate of change of the binary semi-major axis as a function of binary eccentricity. 
+</strong>
+
+
+<div id="c25b4844-f683-4d78-8791-e25cdf6b0f0a" data-root-id="p1069" style="display: contents;"></div>
+
+    <script type="application/json" id="bcfa6936-ccd5-4134-b516-57c8061a4e38">
+      {"ee3a9092-d79f-4a94-9591-3f0ce5aa7028":{"version":"3.6.2","title":"Bokeh Application","roots":[{"type":"object","name":"Row","id":"p1069","attributes":{"children":[{"type":"object","name":"CheckboxGroup","id":"p1067","attributes":{"js_property_callbacks":{"type":"map","entries":[["change:active",[{"type":"object","name":"CustomJS","id":"p1068","attributes":{"args":{"type":"map","entries":[["l0",{"type":"object","name":"GlyphRenderer","id":"p1050","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1044","attributes":{"selected":{"type":"object","name":"Selection","id":"p1045","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1046"},"data":{"type":"map","entries":[["x",{"type":"ndarray","array":{"type":"bytes","data":"mpmZmZmZiT+amZmZmZmZP5qZmZmZmak/mpmZmZmZuT+amZmZmZnJPzMzMzMzM9M/mpmZmZmZ2T8AAAAAAADgPzMzMzMzM+M/"},"shape":[9],"dtype":"float64","order":"little"}],["y",{"type":"ndarray","array":{"type":"bytes","data":"g4jNLW/SBkCJ7kQSbioHQKGNLwLWjgZA77PTuY0xnr8spIlfqE8EwHBzYyhQjhPALOUhCxhsBcDsJoNoCa7VP1+kCDafwue/"},"shape":[9],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1051","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1052"}}},"glyph":{"type":"object","name":"Scatter","id":"p1047","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":15},"line_color":{"type":"value","value":"#440154"},"line_alpha":{"type":"value","value":0.8},"fill_color":{"type":"value","value":"#440154"},"fill_alpha":{"type":"value","value":0.8},"hatch_color":{"type":"value","value":"#440154"},"hatch_alpha":{"type":"value","value":0.8},"marker":{"type":"value","value":"square"}}},"nonselection_glyph":{"type":"object","name":"Scatter","id":"p1048","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":15},"line_color":{"type":"value","value":"#440154"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#440154"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"#440154"},"hatch_alpha":{"type":"value","value":0.1},"marker":{"type":"value","value":"square"}}},"muted_glyph":{"type":"object","name":"Scatter","id":"p1049","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":15},"line_color":{"type":"value","value":"#440154"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#440154"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"#440154"},"hatch_alpha":{"type":"value","value":0.2},"marker":{"type":"value","value":"square"}}}}}],["l1",{"type":"object","name":"GlyphRenderer","id":"p1061","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1055","attributes":{"selected":{"type":"object","name":"Selection","id":"p1056","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1057"},"data":{"type":"map","entries":[["x",{"type":"ndarray","array":{"type":"bytes","data":"mpmZmZmZiT+amZmZmZmZP5qZmZmZmak/mpmZmZmZuT+amZmZmZnJPzMzMzMzM9M/mpmZmZmZ2T8AAAAAAADgPzMzMzMzM+M/"},"shape":[9],"dtype":"float64","order":"little"}],["y",{"type":"ndarray","array":{"type":"bytes","data":"vmGlXaHb+r+f9lBYMsv7vwlFdzoYU9K/VSqV70Am1z891p4G0zolwEAbGamS1hnAstzNN2iF9j+hXkCzcJjLv1MvnIltQvK/"},"shape":[9],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1062","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1063"}}},"glyph":{"type":"object","name":"Scatter","id":"p1058","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":15},"line_color":{"type":"value","value":"#208F8C"},"line_alpha":{"type":"value","value":0.8},"fill_color":{"type":"value","value":"#208F8C"},"fill_alpha":{"type":"value","value":0.8},"hatch_color":{"type":"value","value":"#208F8C"},"hatch_alpha":{"type":"value","value":0.8}}},"nonselection_glyph":{"type":"object","name":"Scatter","id":"p1059","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":15},"line_color":{"type":"value","value":"#208F8C"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#208F8C"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"#208F8C"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"Scatter","id":"p1060","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":15},"line_color":{"type":"value","value":"#208F8C"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#208F8C"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"#208F8C"},"hatch_alpha":{"type":"value","value":0.2}}}}}],["checkbox",{"id":"p1067"}]]},"code":"\nconsole.log(checkbox.active)\n\nl0.visible = checkbox.active.includes(0);\nl1.visible = checkbox.active.includes(1);\n"}}]]]},"width":100,"labels":["h/r=0.1","h/r=0.05"],"active":[0,1]}},{"type":"object","name":"Figure","id":"p1001","attributes":{"height":400,"x_range":{"type":"object","name":"DataRange1d","id":"p1002"},"y_range":{"type":"object","name":"DataRange1d","id":"p1003"},"x_scale":{"type":"object","name":"LinearScale","id":"p1010"},"y_scale":{"type":"object","name":"LinearScale","id":"p1011"},"title":{"type":"object","name":"Title","id":"p1008"},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1041","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1035","attributes":{"selected":{"type":"object","name":"Selection","id":"p1036","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1037"},"data":{"type":"map","entries":[["x",{"type":"ndarray","array":{"type":"bytes","data":"mpmZmZmZiT+amZmZmZmZP5qZmZmZmak/mpmZmZmZuT+amZmZmZnJPzMzMzMzM9M/mpmZmZmZ2T8AAAAAAADgPzMzMzMzM+M/"},"shape":[9],"dtype":"float64","order":"little"}],["y",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"},"shape":[9],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1042","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1043"}}},"glyph":{"type":"object","name":"Line","id":"p1038","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"gray","line_dash":[6]}},"nonselection_glyph":{"type":"object","name":"Line","id":"p1039","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"gray","line_alpha":0.1,"line_dash":[6]}},"muted_glyph":{"type":"object","name":"Line","id":"p1040","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"gray","line_alpha":0.2,"line_dash":[6]}}}},{"id":"p1050"},{"id":"p1061"}],"toolbar":{"type":"object","name":"Toolbar","id":"p1009","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p1022"},{"type":"object","name":"WheelZoomTool","id":"p1023","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p1024","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p1025","attributes":{"syncable":false,"line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","handles":{"type":"object","name":"BoxInteractionHandles","id":"p1031","attributes":{"all":{"type":"object","name":"AreaVisuals","id":"p1030","attributes":{"fill_color":"white","hover_fill_color":"lightgray"}}}}}}}},{"type":"object","name":"SaveTool","id":"p1032"},{"type":"object","name":"ResetTool","id":"p1033"},{"type":"object","name":"HelpTool","id":"p1034"}]}},"left":[{"type":"object","name":"LinearAxis","id":"p1017","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1018","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1019"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p1020"}}},{"type":"object","name":"Title","id":"p1065","attributes":{"text":"dlog(a)/dlog(M)","align":"center"}}],"below":[{"type":"object","name":"LinearAxis","id":"p1012","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1013","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1014"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p1015"}}},{"type":"object","name":"Title","id":"p1066","attributes":{"text":"e","align":"center"}}],"center":[{"type":"object","name":"Grid","id":"p1016","attributes":{"axis":{"id":"p1012"}}},{"type":"object","name":"Grid","id":"p1021","attributes":{"dimension":1,"axis":{"id":"p1017"}}},{"type":"object","name":"Legend","id":"p1053","attributes":{"location":"bottom_right","items":[{"type":"object","name":"LegendItem","id":"p1054","attributes":{"label":{"type":"value","value":"h/r=0.1"},"renderers":[{"id":"p1050"}]}},{"type":"object","name":"LegendItem","id":"p1064","attributes":{"label":{"type":"value","value":"h/r=0.05"},"renderers":[{"id":"p1061"}]}}]}}]}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('bcfa6936-ccd5-4134-b516-57c8061a4e38').textContent;
+              const render_items = [{"docid":"ee3a9092-d79f-4a94-9591-3f0ce5aa7028","roots":{"p1069":"c25b4844-f683-4d78-8791-e25cdf6b0f0a"},"root_ids":["p1069"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+
+At \( e\sim0\), we can see the familiar result that binaries accreting from \(H/r\sim0.1\) disks outspiral but binaries accreting from \(H/r\sim0.05\) disks inspiral 
+(e.g.
+<a class="page-link" href="#Tiede+20">Tiede+ 2020</a>,
+<a class="page-link" href="#D&R22">Dittmann & Ryan 2022</a>).
+
+At \(H/r=0.1\), the trends in \(da/dt\) found here are similar to those found by 
+<a class="page-link" href="#D&D21">D'Orazio & Duffell 2021</a> and
+<a class="page-link" href="#Siwek+23">Siwek+ 2023</a>.
+For both disk thicknesses, it is unclear from the current set of simulations what sort of semi-major axis evolution should occur near the eccentricity fixed point, but at intermediate eccentricities there seems to be potential for fairly rapid inspirals. 
+
+<br />
+<p class="notice">
+<a id="future"> </a>
+<strong> Next steps: </strong> <br>
+The main question on my mind is <strong> are the \( \dot{e} \) and \( \dot{a} \) features around \( e\sim0.2 \) real? </strong> 
+In pursuit of an answer, I have some resolution tests, extended-duration runs, and intermediate-eccentricity simulations ongoing. Look out for an answer sometime down the road. 
+<br>
+Of course, there are also the pressing questions of how these trends evolve (or not?) in thinner (or thicker?) disks, with different viscosities and treatments of thermodynamics, different mass ratios, and of course magnetic fields. 
+</p>
+
+
+<p class="notice">
+<a id="technical"> </a>
+<strong> Technical Details: </strong> <br>
+These simulations used the finite-volume moving-mesh code [Disco], including the corrected viscosity treatment decribed in 
+the Appendix of [D&R 2021]. The simulations used a locally isothermal equation of state, setting the sound speed according to
+$$ c_s^2 = -\Phi/\mathcal{M}^2,$$
+where \( \mathcal{M} \) is a typical azimuthal Mach number. Here we studied \( \mathcal{M}\in\{10,20\} \).
+We've studied eccentric, equal-mass binaries with eccentricities \(e\in\{0.0125, 0.025, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6\}\).
+These simulations assumed a globally-constant kinematic viscosity of \(\nu=0.001\).
+</p>
+The domain extended from \( r=0 \) to \( r=30a_b \) and was resolved with \( N_r=1152 \) cells, linearly spaced from \(r=0\) to \(r=a_b\) and logarithmically spaced thereafter. The azimuthal cell spacing was chosen to maintain cell aspect ratios as close to unity as possible. 
+<br>
+The simulations used "torque-free" sinks (see Appendix A of [D&R 2024] and the references therein), with a sink radius of \( 0.025 a_b \) and a sink rate of \( 7.5 \Omega_b \). The point masses used a softened Plummer potential with a softening radius of \(0.025 a_b\)  
+<br>
+Each simulation here was carried out for 2000 orbital periods of the  binary.
+
+<br>
+<br>
+<a id="references"> </a>
+<strong> Bibliography: </strong> <br>
+
+<a id="D&R21"> </a>
+•Dittmann, A., & Ryan, G. (2021).
+<a class="page-link" href="https://ui.adsabs.harvard.edu/abs/2021ApJ...921...71D/abstract" target="_empty">Preventing Anomalous Torques in Circumbinary Accretion Simulations.</a>
+ ApJ, 921(1), 71.
+<br>
+
+<a id="D&R22"> </a>
+•Dittmann, A., & Ryan, G. (2022).
+<a class="page-link" href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.513.6158D/abstract" target="_empty">A survey of disc thickness and viscosity in circumbinary accretion: Binary evolution, variability, and disc morphology.</a>
+MNRAS, 513(4), 6158-6176.
+<br>
+
+<a id="D&R24"> </a>
+•Dittmann, A., & Ryan, G. (2024). 
+<a class="page-link" href="https://ui.adsabs.harvard.edu/abs/2024ApJ...967...12D/abstract" target="_empty"> The Evolution of Accreting Binaries: From Brown Dwarfs to Supermassive Black Holes. </a> 
+ApJ, 967(1), 12.
+<br>
+
+
+<a id="Duffell16"> </a>
+•Duffell, P. (2016).
+<a class="page-link" href="https://ui.adsabs.harvard.edu/abs/2016ApJS..226....2D/abstract" target="_empty"> DISCO: A 3D Moving-mesh Magnetohydrodynamics Code Designed for the Study of Astrophysical Disks.
+ </a> 
+ApJS, 226(1), 2.
+<br>
+
+<a id="D&D21"> </a>
+•D'Orazio, D., & Duffell, P. (2021). 
+<a class="page-link" href="https://ui.adsabs.harvard.edu/abs/2021ApJ...914L..21D/abstract
+" target="_empty"> Orbital Evolution of Equal-mass Eccentric Binaries due to a Gas Disk: Eccentric Inspirals and Circular Outspirals. </a> 
+ ApJL, 914(1), L21.
+<br>
+
+<a id="Penzlin+25"> </a>
+•Penzlin, A., Booth, R., Nelson, R., Schäfer, C., & Kley, W. (2025).
+<a class="page-link" href="https://ui.adsabs.harvard.edu/abs/2025arXiv250117055P/abstract" target="_empty"> Viscous circumbinary protoplanetary discs – II. Disc effects on the binary orbit. </a> 
+ arXiv e-prints, arXiv:2501.17055.
+<br>
+
+<a id="Siwek+23"> </a>
+•Siwek, M., Weinberger, R., & Hernquist, L. (2023). 
+<a class="page-link" href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.2707S/abstract" target="_empty"> Orbital evolution of binaries in circumbinary discs. </a> 
+ MNRAS, 522(2), 2707-2717.
+<br>
+
+<a id="Tiede+20"> </a>
+Tiede, C., Zrake, J., MacFadyen, A., & Haiman, Z. (2020). 
+<a class="page-link" href="https://ui.adsabs.harvard.edu/abs/2020ApJ...900...43T/abstract" target="_empty"> Gas-driven Inspiral of Binaries in Thin Accretion Disks. </a> 
+ApJ, 900(1), 43.
+<br>
+
+
+<a id="Zrake+21"> </a>
+•Zrake, J., Tiede, C., MacFadyen, A., & Haiman, Z. (2021). 
+<a class="page-link" href="https://ui.adsabs.harvard.edu/abs/2021ApJ...909L..13Z/abstract" target="_empty">Equilibrium Eccentricity of Accreting Binaries. </a> 
+ ApJL, 909(1), L13.
+<br>
+
+</main>
+    <footer>
+      <p>This webpage was created using simple.css, which was created by <a href="https://kevquirk.com">Kev Quirk</a> and is licensed under the MIT license.  You should <a href="https://simplecss.org">check it out.</a>
+    </footer>
+
+  </body>
+</html>
+
