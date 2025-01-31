@@ -184,8 +184,8 @@ Of course, there are also the pressing questions of how these trends evolve (or 
 <p class="notice">
 <a id="technical"> </a>
 <strong> Technical Details: </strong> <br>
-These simulations used the finite-volume moving-mesh code [Disco], including the corrected viscosity treatment decribed in 
-the Appendix of [D&R 2021]. The simulations used a locally isothermal equation of state, setting the sound speed according to
+These simulations used the finite-volume moving-mesh code <a class="page-link" href="#Duffell16">Disco</a>, including the corrected viscosity treatment decribed in 
+the Appendix A of <a class="page-link" href="#D&R21">Dittmann & Ryan 2021 </a>. The simulations used a locally isothermal equation of state, setting the sound speed according to
 $$ c_s^2 = -\Phi/\mathcal{M}^2,$$
 where \( \mathcal{M} \) is a typical azimuthal Mach number. Here we studied \( \mathcal{M}\in\{10,20\} \).
 We've studied eccentric, equal-mass binaries with eccentricities \(e\in\{0.0125, 0.025, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6\}\).
@@ -193,7 +193,7 @@ These simulations assumed a globally-constant kinematic viscosity of \(\nu=0.001
 </p>
 The domain extended from \( r=0 \) to \( r=30a_b \) and was resolved with \( N_r=1152 \) cells, linearly spaced from \(r=0\) to \(r=a_b\) and logarithmically spaced thereafter. The azimuthal cell spacing was chosen to maintain cell aspect ratios as close to unity as possible. 
 <br>
-The simulations used "torque-free" sinks (see Appendix A of [D&R 2024] and the references therein), with a sink radius of \( 0.025 a_b \) and a sink rate of \( 7.5 \Omega_b \). The point masses used a softened Plummer potential with a softening radius of \(0.025 a_b\)  
+The simulations used "torque-free" sinks (see <a class="page-link" href="#D&R21" > Dittmann & Ryan 2021 </a> and Figures 16 and 17 of <a class="page-link" href=#D&R24">Dittmann & Ryan 2024 </a>), with a sink radius of \( 0.025 a_b \) and a sink rate of \( 7.5 \Omega_b \). The point masses used a softened Plummer potential with a softening radius of \(0.025 a_b\)  
 <br>
 Each simulation here was carried out for 2000 orbital periods of the  binary.
 
